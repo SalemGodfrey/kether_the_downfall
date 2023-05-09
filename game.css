@@ -1,0 +1,49 @@
+
+
+
+
+@font-face {
+    font-family: 'Metropol 95';
+    src: url('Metropol95.woff2') format('woff2'),
+        url('Metropol95.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Monplesir script';
+    src: url('Monplesirscript.woff2') format('woff2'),
+        url('Monplesirscript.woff') format('woff'),
+        url('Monplesirscript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    overflow-x: hidden;
+}
+
+a, p {
+    font-family: 'Metropol 95';
+}
+h4, h2, h1 {
+    font-family: 'Times New Roman', Times, serif
+
+}
+
+.black {
+    background-color: black;
+}

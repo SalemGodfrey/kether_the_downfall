@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Создание Персонажа</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0%
+    }
+
+
+
+    input {
+        border: none;
+        border-bottom: 1px solid black;
+        color: rgb(114, 21, 21);
+        font-family: 'Monplesir script';
+    }
+
+    input:focus {
+        outline: none;
+        color: rgb(114, 21, 21);
+        font-family: 'Monplesir script';
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="text-center" style="border: 1px ">
+            <img src="logo.png" style="width: 25%" alt="">
+            <!-- Сведения -->
+            <div class="row">
+                <div class="col" style="border: 1px  ">
+                    <a style="float: left">Имя:</a>
+                    <input style="float: right" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+
+                    <a style="float: left">Игрок:</a>
+                    <input style="float: right" id="playerName" type="text">
+                    <br>
+                    <a style="float: left">Таймлайн:</a>
+
+                    <input style="float: right" type="text">
+                </div>
+                <div class="col" style="border: 1px  ">
+                    <a style="float: left">Прошлое:</a>
+                    <input style="float: right" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+
+                    <a style="float: left">Пол:</a>
+                    <input style="float: right" type="text">
+                    <br>
+                    <a style="float: left">Национальность:</a>
+                    <input style="float: right" type="text">
+                </div>
+                <div class="col" style="border: 1px  ">
+                    <a style="float: left">Роль:</a>
+                    <input style="float: right" type="text">
+                    <br>
+
+
+                </div>
+
+            </div>
+            <img src="divider.png" style="width: 30%; position: relative; top: 30px;  left: 500px" alt="">
+            <img src="divider.png"
+                style="width: 30%; position: relative; transform: rotate(-180deg); top: 30px;  left: -500px" alt="">
+            <!-- Атрибуты -->
+            <h2>Характеристики</h2>
+            <div class="row">
+                <div class="col c1" style="border: 1px  ">
+                    <h4>Физические</h4>
+                    <a style="float: left">Сила</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+
+                    <a style="float: left">Ловкость</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                    <br>
+                    <a style="float: left">Выносливость</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                </div>
+                <div class="col c1" style="border: 1px  ">
+                    <h4>Социальные</h4>
+                    <a style="float: left">Обаяние</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+
+                    <a style="float: left">Манипуляция</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                    <br>
+                    <a style="float: left">Привлекательность</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                </div>
+                <div class="col c1" style="border: 1px  ">
+                    <h4>Ментальные</h4>
+                    <a style="float: left">Восприятие</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                    <br>
+                    <a style="float: left">Интелект</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                    <br>
+                    <a style="float: left">Магия</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                    </div>
+                </div>
+            </div>
+            <!-- Способности -->
+            <img src="divider.png" style="width: 30%; position: relative; top: 30px;  left: 500px" alt="">
+            <img src="divider.png"
+                style="width: 30%; position: relative; transform: rotate(-180deg); top: 30px;  left: -500px" alt="">
+            <h2>Способности</h2>
+            <div class="row">
+                <div class="col c1" style="border: 1px  ">
+                    <h4>Талланты</h4>
+                    <a style="float: left">Атлетика</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+
+                    <a style="float: left">Бдительность</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Драка</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Запугивание</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Красноречие</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Лидерство</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Знание улиц</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Хитрость</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Шестое чувство</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Эмпатия</a>
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="col c1" style="border: 1px  ">
+                    <h4>Навыки</h4>
+                    <a style="float: left">Вождение</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <a style="float: left">Воровство</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Выживание</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Исполнение</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Знание животных</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Ремесло</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Скрытность</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Стрельба</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Фехтование</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Этикет</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+
+
+                </div>
+                <div class="col c1" style="border: 1px  ">
+                    <h4>Знания</h4>
+                    <a style="float: left">Гумманитарные науки</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <a style="float: left">Естественные науки</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Лингвистика</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Медицина</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Оккультизм</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Политика</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Расследование</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Финансы</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Фармцевтика</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                    <br>
+                    <a style="float: left">Юриспруденция</a>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px;">
+                    </div>
+                </div>
+            </div>
+            <!-- Преимущества -->
+            <img src="divider.png" style="width: 30%; position: relative; top: 30px;  left: 500px" alt="">
+            <img src="divider.png"
+                style="width: 30%; position: relative; transform: rotate(-180deg); top: 30px;  left: -500px" alt="">
+            <h2>Преимущества</h2>
+            <div class="row">
+                <div class="col c1" style="border: 1px  ">
+                    <h4>Инвентарь</h4>
+                    <input style="float: left; width: 400px" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left; width: 400px" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left; width: 400px" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left; width: 400px" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left; width: 400px" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left; width: 400px" type="text">
+                </div>
+                <div class="col c1" style="border: 1px  ">
+                    <h4>Факты биографии</h4>
+                    <input style="float: left" type="text">
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+
+                    <input style="float: left" type="text">
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+
+                    <input style="float: left" type="text">
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                    <div
+                        style="float: right; border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px">
+                    </div>
+                </div>
+                <div class="col" style="border: 1px  ">
+                    <h4>Теурпринципы</h4>
+
+                    <a>Сопротивляемость</a>
+                    <br>
+                    <div class="block  c1" style="display: flex; justify-content: center">
+                        <div
+                            style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                        </div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                    </div>
+                    <a>Чистота</a>
+                    <br>
+                    <div class="block  c1" style="display: flex; justify-content: center">
+                        <div
+                            style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                        </div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                    </div>
+                    <a>Скорость</a>
+                    <br>
+                    <div class="block  c1" style="display: flex; justify-content: center">
+                        <div
+                            style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px; background-color: black">
+                        </div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Дополнительно -->
+            <img src="divider.png" style="width: 30%; position: relative; top: 30px;  left: 500px" alt="">
+            <img src="divider.png"
+                style="width: 30%; position: relative; transform: rotate(-180deg); top: 30px;  left: -500px" alt="">
+            <h2></h2>
+            <div class="row" style="margin-top: 50px">
+                <div class="col">
+                    <h4>Баффы и Дебаффы</h4>
+                    <a style="float: left">Баффы</a>
+                    <a style="float: right;">Цена</a>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+                    <input style="float: right; width: 10%" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+                    <input style="float: right; width: 10%" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+                    <input style="float: right; width: 10%" type="text">
+
+
+
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <a style="float: left">Дебаффы</a>
+                    <a style="float: right">Цена</a>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+                    <input style="float: right; width: 10%" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+                    <input style="float: right; width: 10%" type="text">
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <input style="float: left" type="text">
+                    <input style="float: right; width: 10%" type="text">
+                    <br>
+
+                </div>
+                <div class="col">
+                    <h4>Рассудок</h4>
+                    <div class="block  c1" style="display: flex; justify-content: center">
+
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style=" border-radius: 100% ;  border: 1.5px solid black; width: 20px; height: 20px"></div>
+
+                    </div>
+
+                    
+
+                    <h4>Броня</h4>
+                    <div class="block c1" style="display: flex; justify-content: center; margin-top: 10px;">
+
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+
+                    </div>
+                    <div class="block c1" style="display: flex; justify-content: center;">
+
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+
+                    </div>
+                    <h4>Состояние</h4>
+                    <div class="block c1" style="display: flex; justify-content: center; margin-top: 10px;">
+
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+                        <div style="border: 1.5px solid black; width: 20px; height: 20px"></div>
+
+                    </div>
+
+
+                </div>
+                <div class="col c1">
+                    <h4>Здоровье</h4>
+                    <a style="float: left">Помят</a>
+                    <div style="border: 1.5px solid black; width: 20px; height: 20px; float: right"></div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <a style="float: left">Легко ранен</a>
+                    <div style="border: 1.5px solid black; width: 20px; height: 20px; float: right"></div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <a style="float: left">Серьезно ранен</a>
+                    <div style="border: 1.5px solid black; width: 20px; height: 20px; float: right"></div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <a style="float: left">Тяжело ранен</a>
+                    <div style="border: 1.5px solid black; width: 20px; height: 20px; float: right"></div>
+                    <br>
+                    <div class="clear" style="clear: both"></div>
+                    <a style="float: left">Совсем плох</a>
+                    <div style="border: 1.5px solid black; width: 20px; height: 20px; float: right"></div>
+                    <br>
+                    <a style="float: left">Недееспособен</a>
+                    <div style="border: 1.5px solid black; width: 20px; height: 20px; float: right"></div>
+                    <br>
+
+                    <h4 style="padding-top: 20px">Опыт</h4>
+                    <input type="text">
+                </div>
+
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 50px">
+            <p>Характеристики: 7/5/3.</p>
+            <p>Способности: 13/9/5</p>
+            <p>Преимущества: 3/5</p>
+            <hr>
+            <h2>Роли</h2>
+            <div class="row">
+                <div class="col">
+                    <h4>Полицейский</h4>
+                    <img src="img/cop.jpg" alt="">
+                    <div class="text-center">
+                        <p>Полицейский получает +1 к Характеристикам "Сила" и "Выносливость", а так же +2 к Способностям
+                            "Драка",
+                            "Стрельба" и "Фехтование". -1 к Характеристике "Ловкость". Персонаж с ролью "Полицейский" будет
+                            иметь
+                            доступ к полицейскому арсеналу и архиву. </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Музыкант</h4>
+                    <img src="img/player.jpg" alt="">
+                    <div class="text-center">
+                        <p>Музыкант получает +1 к Характеристикам "Обаяние" и "Привлекательность", а так же +2 к Способностям
+                            "Эмпатия",
+                            "Исполнение" и "Этикет". -1 к Характеристике "Сила". Персонаж с ролью "Музыкант" легко располагает
+                            к себе людей и без проблем может вытянуть нужную ему информацию. </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Доктор</h4>
+                    <img src="img/doctor.jpg" alt="">
+                    <div class="text-center">
+                        <p>Доктор получает +1 к Характеристикам "Интелект" и "Магия", а так же +2 к Способностям "Выживание",
+                            "Медицина"
+                            и "Фармцевтика". -1 к Характеристике "Выносливость". Персонаж с ролью "Доктор" будет уметь лечить
+                            других
+                            игроков и персонажей и иметь доступ к мед. инструментам.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Частный детектив</h4>
+                    <img src="img/detective.jpg" alt="">
+                    <div class="text-center">
+                        <p>Частный Детектив получает +1 к Характеристикам "Интелект" и "Манипуляция", а так же +2 к
+                            Способностям "Драга",
+                            "Стрельба" и "Расследование". -1 к Характеристике "Обаяние". Персонаж с ролью "Частный детектив"
+                            будет
+                            иметь много связей и носить оружие. </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Убийца</h4>
+                    <img src="img/killer.jpg" alt="">
+                    <div class="text-center">
+                        <p>Убийца получает +1 к Характеристикам "Сила" и "Манипуляция", а так же +2 к Способностям "Хитрость",
+                            "Скрытность"
+                            и "Бдительность". -1 к Характеристике "Восприятие". Персонаж с ролью "Убйица" сильно влияет на
+                            других
+                            персонажей и способен симулировать любые эмоции. </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Мафиози</h4>
+                    <img src="img/mafia.jpg" alt="">
+                    <div class="text-center">
+                        <p>Мафиози получает +1 к Характеристикам "Сила" и "Привлекательность", а так же +2 к Способностям
+                            "Запугивание",
+                            "Лидерство" и "Атлетика". -1 к Характеристике "Магия". Персонаж с ролью "Мафиози" имеет много
+                            денег
+                            (засчет чего может даже достать любое оружие), может позвать на помощь других мафиози . </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Джентельмен</h4>
+                    <img src="img/gentleman.jpg" alt="">
+                    <div class="text-center">
+                        <p>Джентельмен получает +1 к Характеристикам "Интелект" и "Привлекательность", а так же +2 к
+                            Способностям
+                            "Красноречие", "Политика" и "Этикет". -1 к Характеристике "Манипуляция". Персонаж с ролью
+                            "Джентельмен"
+                            хорошо разбирается в любых видах искусства и на одной волне с персонжами своего пола, 
+                            роль для создания своего собственного билда. </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Журналист</h4>
+                    <img src="img/journalist.jpg" alt="">
+                    <div class="text-center">
+                        <p>Журналист получает +1 к Характеристикам "Восприятие" и "Манипуляция", а так же +2 к Способностям
+                            "Красноречие",
+                            "Хитрость" и "Лингвистика". -1 к Характеристике "Обаяние". Персонаж с ролью "Журналист"
+                            профессионал
+                            в добыче информации, может управлять (воздействовать на людей) с помощью прессы. </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Леди</h4>
+                    <img src="img/lady.jpg" alt="">
+                    <div class="text-center">
+                        <p>Леди получает +1 к Характеристикам "Интелект" и "Привлекательность", а так же +2 к
+                            Способностям
+                            "Красноречие", "Шестое чувство" и "Этикет". -1 к Характеристике "Манипуляция". Персонаж с ролью
+                            "Леди"
+                            хорошо разбирается в любых видах искусства и на одной волне с персонжами   пола, 
+                            роль для создания своего собственного билда. </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Маг</h4>
+                    <img src="img/mage.jpg" alt="">
+                    <div class="text-center">
+                        <p>Маг получает +1 к Характеристикам "Магия" и "Интелект", а так же +2 к
+                            Способностям
+                            "Оккультизм", "Шестое чувство" и "Фармцевтика". -1 к Характеристике "Манипуляция". Персонаж с ролью
+                            "Маг"
+                            способен создавать свои собственные заклинания и магические эликсиры, при наличии определенных средств. </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <h2>Баффы и Дебаффы</h2>
+            <div class="row">
+                <div class="col">
+                    <h4>Алкогольное опьянение</h4>
+                    <img src="img/alcohol.jpg" alt="">
+                    <div class="text-center">
+                        <p>Активируется при употреблении алкоголя. -1 к Характеристикам "Ловкость" и "Интелект". -1 к
+                            Способностям
+                            "Красноречие", "Вождение" и "Этикет".</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Кровотечение</h4>
+                    <img src="img/blood.jpg" alt="">
+                    <div class="text-center">
+                        <p>Активируется при режущем ранении. Персонаж не сможет бегать и ходить с обычной скоростью. -1
+                            к Характеристикам
+                            "Ловкость". Каждый ход -1 к "Состояние"</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h4>Теургический артефакт</h4>
+                    <img src="img/magic.jpg" alt="">
+                    <div class="text-center">
+                        <p>Активируется при использовании артефактов наделенных магической силой. +1 к Характеристике "Магия".
+                            +1
+                            к Способности "Оккультизм".</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Вдохновление прекрасным</h4>
+                    <img src="img/music.jpg" alt="">
+                    <div class="text-center">
+                        <p>Активируется при созерцании искусства или прослушивании музыки. +1 к Характеристике "Восприятие".
+                            +1 к
+                            Способности "Эмпатия".</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Восстановление</h4>
+                    <img src="img/potion.jpg" alt="">
+                    <div class="text-center">
+                        <p>Активируется при употреблении лекарственных препаратов. Каждый 1 ход +1 к "Состояние".
+                            Снимает все
+                            дебаффы. </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Отравление</h4>
+                    <img src="img/poison.jpg" alt="">
+                    <div class="text-center">
+                        <p>Активируется при попадании яда в организм. Каждые 4 хода -4 к "Состояние". -1 к Характеристикам
+                            "Сила",
+                            "Ловкость" и "Выносливость". </p>
+                    </div>
+                </div>
+
+            </div>
+           
+
+
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
